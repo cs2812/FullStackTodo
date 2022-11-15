@@ -1,0 +1,36 @@
+body{
+  height: 100%;
+}
+.App {
+  text-align: center;
+}
+
+.todoHome{
+  background-image: url("../public/TodoBackground.jpg");
+
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  min-height: 90vh;
+  height: auto !important; /*min-height hack*/
+  /* height: 100vh;            min-height hack */
+  margin-bottom: -4em;
+}
+a{
+  color: rgb(225, 80, 12);
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+
