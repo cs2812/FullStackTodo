@@ -8,6 +8,7 @@ export const SignupAction=(form)=>(dispatch)=>{
     .then((r)=>{
 
         alert("SignUp Successful")
+        dispatch({type:"singnup"})
 
     })
     .catch((e)=>{
@@ -21,7 +22,7 @@ export const LoginAction=(form)=>(dispatch)=>{
     // dispatch({type:"LOGIN_SUCCESS",payload:form})
     axios.post("https://mongobackend.onrender.com/user/login",form)
     .then((r)=>{
-        console.log("res",r.data)
+        // console.log("res",r.data)
         if(r.data.message==="Logged in successfull"){
             alert(r.data.message)
             dispatch({type:"LOGIN_SUCCESS",payload:r.data})

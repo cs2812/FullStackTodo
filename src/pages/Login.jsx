@@ -77,8 +77,6 @@ const Login = () => {
             <Link to={"/user/signup"}>Create Account</Link>
             </Button>
         </InputGroup>
-
-      
     </Center>
   )
 }
